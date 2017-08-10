@@ -8,8 +8,8 @@ import android.util.AttributeSet;
 import android.view.View;
 
 public class Practice05SetFakeBoldTextView extends View {
-    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    String text = "Hello HenCoder";
+    Paint  paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    String text  = "Hello HenCoder";
 
     public Practice05SetFakeBoldTextView(Context context) {
         super(context);
@@ -27,6 +27,7 @@ public class Practice05SetFakeBoldTextView extends View {
         paint.setTextSize(60);
 
         // 使用 Paint.setFakeBoldText() 来加粗文字
+        paint.setFakeBoldText(true);
     }
 
     @Override
